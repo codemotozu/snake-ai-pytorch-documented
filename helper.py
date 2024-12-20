@@ -1,19 +1,20 @@
-import matplotlib.pyplot as plt
-from IPython import display
+import matplotlib.pyplot as plt  # Import the matplotlib.pyplot module for creating plots (English), Importiere das matplotlib.pyplot-Modul zum Erstellen von Diagrammen (Deutsch)
+from IPython import display  # Import the display module from IPython to control output display (English), Importiere das Display-Modul von IPython, um die Ausgabeanzeige zu steuern (Deutsch)
 
-plt.ion()
+plt.ion()  # Turn on interactive mode in matplotlib, enabling real-time updates of the plot (English), Aktivieren des interaktiven Modus in matplotlib, um Echtzeitaktualisierungen des Diagramms zu ermöglichen (Deutsch)
 
-def plot(scores, mean_scores):
-    display.clear_output(wait=True)
-    display.display(plt.gcf())
-    plt.clf()
-    plt.title('Training...')
-    plt.xlabel('Number of Games')
-    plt.ylabel('Score')
-    plt.plot(scores)
-    plt.plot(mean_scores)
-    plt.ylim(ymin=0)
-    plt.text(len(scores)-1, scores[-1], str(scores[-1]))
-    plt.text(len(mean_scores)-1, mean_scores[-1], str(mean_scores[-1]))
-    plt.show(block=False)
-    plt.pause(.1)
+def plot(scores, mean_scores):  # Define a function named 'plot' that takes two parameters: scores and mean_scores (English), Definiere eine Funktion namens 'plot', die zwei Parameter annimmt: scores und mean_scores (Deutsch)
+    display.clear_output(wait=True)  # Clear the previous output in the IPython display (English), Lösche die vorherige Ausgabe in der IPython-Anzeige (Deutsch)
+    display.display(plt.gcf())  # Display the current figure (plt.gcf() gets the current figure) (English), Zeige die aktuelle Figur an (plt.gcf() gibt die aktuelle Figur zurück) (Deutsch)
+    plt.clf()  # Clear the current figure (English), Lösche die aktuelle Figur (Deutsch)
+    plt.title('Training...')  # Set the title of the plot to 'Training...' (English), Setze den Titel des Diagramms auf 'Training...' (Deutsch)
+    plt.xlabel('Number of Games')  # Set the label for the x-axis (English), Setze das Label für die x-Achse (Deutsch)
+    plt.ylabel('Score')  # Set the label for the y-axis (English), Setze das Label für die y-Achse (Deutsch)
+    plt.plot(scores)  # Plot the 'scores' data on the graph (English), Zeichne die 'scores'-Daten im Diagramm (Deutsch)
+    plt.plot(mean_scores)  # Plot the 'mean_scores' data on the graph (English), Zeichne die 'mean_scores'-Daten im Diagramm (Deutsch)
+    plt.ylim(ymin=0)  # Set the y-axis lower limit to 0 (English), Setze das untere Limit der y-Achse auf 0 (Deutsch)
+    plt.text(len(scores)-1, scores[-1], str(scores[-1]))  # Display the last value of 'scores' at the end of the plot (English), Zeige den letzten Wert von 'scores' am Ende des Diagramms an (Deutsch)
+    plt.text(len(mean_scores)-1, mean_scores[-1], str(mean_scores[-1]))  # Display the last value of 'mean_scores' at the end of the plot (English), Zeige den letzten Wert von 'mean_scores' am Ende des Diagramms an (Deutsch)
+    plt.show(block=False)  # Display the plot without blocking further code execution (English), Zeige das Diagramm an, ohne die Ausführung des Codes zu blockieren (Deutsch)
+    plt.pause(.1)  # Pause for 0.1 seconds to allow the plot to update (English), Mache eine Pause von 0,1 Sekunden, um das Diagramm zu aktualisieren (Deutsch)
+
