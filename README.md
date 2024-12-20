@@ -8,3 +8,7 @@ You can find all tutorials on my channel: [Playlist](https://www.youtube.com/pla
 - Part 2: Learn how to setup the environment and implement the Snake game.
 - Part 3: Implement the agent that controls the game.
 - Part 4: Implement the neural network to predict the moves and train it.
+
+![Captura de pantalla 2024-12-18 132759](https://github.com/user-attachments/assets/08a041e2-2545-4245-8e28-a4c167b28c0b)
+
+![Captura de pantalla 2024-12-18 132824](https://github.com/user-attachments/assets/b3977e69-4647-42c8-8df3-2d64a94ba732)
