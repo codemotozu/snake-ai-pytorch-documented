@@ -21,4 +21,4 @@ Patrick Loeber
 
 ## Repository's author:
 
-[https://github.com/abdullahtarek/football_analysis](https://github.com/patrickloeber/snake-ai-pytorch/tree/main)
+[snake-ai-pytorch](https://github.com/patrickloeber/snake-ai-pytorch/tree/main)
